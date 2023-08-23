@@ -1,7 +1,7 @@
 /*
 547. Number of Provinces
 There are n cities. Some of them are connected, while some are not. If city 'a'
-if connected directly with city 'b', and city 'b' is connected directly with city 'c',
+is connected directly with city 'b', and city 'b' is connected directly with city 'c',
 then city 'a' is connected indirectly with city 'c'.
 
 A province is a group of directly or indirectly connected cities and no other cities outside
@@ -15,11 +15,11 @@ Return the total number of provinces.
 
 /*
 Approach:
-With a small addition, we have store the number of component in the UnionFind data structure.
+With a small addition, we can store the number of components in the UnionFind data structure.
 Initially, the number of components is equal to the number of elements because none of them are connected.
-But every time we successfully union two elements, the number of components decrease by one.
+But every time we successfully unite two elements, the number of components decrease by one.
 This logic is implemented below. Using this method, after connecting all the cities, we can
-just return the number of province (connected components) right away.
+just return the number of provinces (connected components) right away.
 */
 
 #include <iostream>
