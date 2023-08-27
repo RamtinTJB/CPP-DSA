@@ -160,7 +160,7 @@ public:
 ```
 
 ## Benchmark
-The difference in performance between these approaches is quite significant; much more than I initially expected. For the benchmark I enqueued 100 million elements to the queue in a for loop, and then dequeued all the elements in another for loop. The code for the benchmark can be found in [QueueLinkedList.cpp](./QueueLinkedList.cpp) and [QueueCircularBuffer.cpp](./QueueCircularBuffer.cpp).
+The difference in performance between these approaches is quite significant; much more than I initially expected. For the benchmark I enqueued 100 million elements to the queue in a for loop, and then dequeued all the elements in another for loop. The code for the benchmark can be found in [QueueLinkedList.cpp](https://github.com/RamtinTJB/CPP-DSA/tree/main/Queue/QueueLinkedList.cpp) and [QueueCircularBuffer.cpp](https://github.com/RamtinTJB/CPP-DSA/tree/main/Queue/QueueCircularBuffer.cpp).
 
 * The Linked List implementation on average took `1.5144` seconds to enqueue and dequeue 100 million elements.
 * The Array implementation on average took `0.6983` seconds to enqueue and dequeue 100 million elements.
@@ -168,6 +168,3 @@ The difference in performance between these approaches is quite significant; muc
 Now, of course, the performance difference between these two implementations could be machine dependent and cannot be generalized to every situation. Furthermore, I didn't implement a resizeable circular buffer which would introduce a great amount of latency every time the array needs to be expanded. Additionally, my benchmark doesn't reflect the real world use cases of a queue, where multiple threades could be reading from and writing to a queue at the same time.
 
 Overall, if we have an upper limit on the number of elements that can be in the queue ahead of time and having low latency is a priority, using an array to implement the Queue data structure seems to be the better choice.
-
-# Thread Safety
-Coming soon...
