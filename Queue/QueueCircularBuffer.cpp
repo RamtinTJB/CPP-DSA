@@ -1,61 +1,46 @@
 #include <iostream>
-#include <chrono>
 #include <iomanip>
+#include <chrono>
 #include <stdexcept>
-
-template <class T>
-struct Node {
-    T value;
-    Node* next;
-    Node(T val) : value(val), next(nullptr) {}
-};
 
 template <class T>
 class Queue {
 private:
-    Node<T>* head_ = nullptr;
-    Node<T>* tail_ = nullptr;
+    size_t head_ = 0, tail_ = 0;
+    T* buffer_;
     size_t size_ = 0;
+    size_t capacity_;
 public:
-    void enqueue(T value) {
-        Node<T>* tmp = new Node<T>(value);
-        if (tail_ == nullptr) {
-            head_ = tmp;
-            tail_ = tmp;
-            return;
-        }
-
-        tail_->next = tmp;
-        tail_ = tmp;
+    Queue(size_t size) : capacity_(size) {
+        buffer_ = new T[size];
+    }
+ 
+    void enqueue(int value) {
+        // If the queue is full, it overwrites the values
+        buffer_[tail_] = value;
+        tail_ = (tail_+1) % capacity_;
         size_++;
+        if (size_ > capacity_) size_ = capacity_;
     }
 
     void dequeue() {
-        if (head_ == nullptr)
-            return;
-
-        Node<T>* tmp = head_;
-        head_ = head_->next;
-
-        if (head_ == nullptr)
-            tail_ = nullptr;
-
-        delete tmp;
+        if (size_ == 0) return;
+        head_ = (head_+1) % capacity_;
         size_--;
     }
 
-    T front() const { 
-        if (head_ == nullptr)
+    T front() const {
+        if (size_ == 0) 
             throw std::logic_error("Queue is empty");
 
-        return head_->value; 
+        return buffer_[head_];
     }
 
     size_t size() const { return size_; }
     bool empty() const { return size_ == 0; }
 
     ~Queue() {
-        while (head_ != nullptr) dequeue();
+        delete[] buffer_;
     }
 };
 
@@ -67,7 +52,7 @@ int main(int argc, const char** argv) {
 
     for (size_t test_iter = 0; test_iter < NUM_TEST; ++test_iter) {
         auto start = std::chrono::high_resolution_clock::now();
-        Queue<int> q;
+        Queue<int> q(NUM_ITERATIONS);
         for (size_t i = 0; i < NUM_ITERATIONS; ++i) {
             q.enqueue(i);
         }
