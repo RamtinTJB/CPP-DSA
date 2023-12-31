@@ -21,5 +21,5 @@ FetchContent_MakeAvailable(
     googlebenchmark
     )
 
-add_executable(${PROJECT_NAME} benchmark.cpp QuickSort.cpp)
+add_executable(${PROJECT_NAME} benchmark.cpp QuickSort.cpp HeapSort.cpp)
 target_link_libraries(${PROJECT_NAME} benchmark::benchmark)

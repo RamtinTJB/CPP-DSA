@@ -4,7 +4,7 @@
 #include <vector>
 
 void quicksort(std::vector<int>&);
-void heapsort(std::vector<int>&); // TODO
+void heapsort(std::vector<int>&);
 void mergesort(std::vector<int>&); // TODO
 void introsort(std::vector<int>&); // TODO
 
