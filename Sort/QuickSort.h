@@ -23,8 +23,30 @@ inline RandomIt partition(RandomIt start, RandomIt end) {
 }
 
 template <typename RandomIt>
+inline RandomIt median_of_three(RandomIt a, RandomIt b, RandomIt c) {
+    if (*a > *b) {
+        if (*b > *c)
+            return b;
+        else if (*a > *c)
+            return c;
+        else
+            return a;
+    } else {
+        if (*a > *c)
+            return a;
+        else if (*b > *c)
+            return c;
+        else
+            return b;
+    }
+}
+
+template <typename RandomIt>
 inline void quicksort(RandomIt start, RandomIt end) {
     if (start >= end) return;
+
+    auto median = median_of_three(start, end-1, start + (end-start)/2);
+    std::iter_swap(median, end-1);
 
     auto p = partition(start, end);
 
