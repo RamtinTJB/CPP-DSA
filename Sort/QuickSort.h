@@ -5,7 +5,7 @@
 #include <iterator>
 
 template <typename RandomIt>
-RandomIt partition(RandomIt start, RandomIt end) {
+inline RandomIt partition(RandomIt start, RandomIt end) {
     auto i = start-1;
     auto pivot = *(end - 1);
 
@@ -23,7 +23,7 @@ RandomIt partition(RandomIt start, RandomIt end) {
 }
 
 template <typename RandomIt>
-void quicksort(RandomIt start, RandomIt end) {
+inline void quicksort(RandomIt start, RandomIt end) {
     if (start >= end) return;
 
     auto p = partition(start, end);

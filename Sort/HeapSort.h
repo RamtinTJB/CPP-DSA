@@ -5,7 +5,7 @@
 #include <iterator>
 
 template <typename RandomIt>
-void heapify(RandomIt start, RandomIt end, RandomIt root) {
+inline void heapify(RandomIt start, RandomIt end, RandomIt root) {
     auto left = start + 2*(root-start) + 1;
     auto right = start + 2*(root-start) + 2;
     auto largest = root;
@@ -23,7 +23,7 @@ void heapify(RandomIt start, RandomIt end, RandomIt root) {
 }
 
 template <typename RandomIt>
-void heapsort(RandomIt start, RandomIt end) {
+inline void heapsort(RandomIt start, RandomIt end) {
     for (auto it = start + (end-start)/2 - 1; it >= start; --it)
         heapify(start, end, it);
 
