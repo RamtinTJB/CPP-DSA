@@ -1,0 +1,109 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+BM_BackslashN	Optimization/endl_bench/main.cpp	/^static void BM_BackslashN(benchmark::State& state) {$/;"	f	file:
+BM_Endl	Optimization/endl_bench/main.cpp	/^static void BM_Endl(benchmark::State& state) {$/;"	f	file:
+BM_HeapSort	Sort/benchmark.cpp	/^BENCHMARK(BM_HeapSort);$/;"	v
+BM_HeapSort	Sort/benchmark.cpp	/^static void BM_HeapSort(benchmark::State& state) {$/;"	f	file:
+BM_IntroSort	Sort/benchmark.cpp	/^BENCHMARK(BM_IntroSort);$/;"	v
+BM_IntroSort	Sort/benchmark.cpp	/^static void BM_IntroSort(benchmark::State& state) {$/;"	f	file:
+BM_QuickSort	Sort/benchmark.cpp	/^BENCHMARK(BM_QuickSort);$/;"	v
+BM_QuickSort	Sort/benchmark.cpp	/^static void BM_QuickSort(benchmark::State& state) {$/;"	f	file:
+CPP_DSA_HEAPSORT_H_	Sort/HeapSort.h	/^#define CPP_DSA_HEAPSORT_H_$/;"	d
+CPP_DSA_INSERTIONSORT_H_	Sort/InsertionSort.h	/^#define CPP_DSA_INSERTIONSORT_H_$/;"	d
+CPP_DSA_INTROSORT_H_	Sort/IntroSort.h	/^#define CPP_DSA_INTROSORT_H_$/;"	d
+CPP_DSA_QUICKSORT_H_	Sort/QuickSort.h	/^#define CPP_DSA_QUICKSORT_H_$/;"	d
+DisjointSet	UnionFind/1202-Smallest-String-With-Swaps.cpp	/^    DisjointSet(int size) : root(size), rank(size) {$/;"	f	class:DisjointSet
+DisjointSet	UnionFind/1202-Smallest-String-With-Swaps.cpp	/^class DisjointSet {$/;"	c	file:
+DisjointSet	UnionFind/547-Number-of-Provinces.cpp	/^    DisjointSet(int size) : root(size), rank(size), provinceCount(size) {$/;"	f	class:DisjointSet
+DisjointSet	UnionFind/547-Number-of-Provinces.cpp	/^class DisjointSet {$/;"	c	file:
+DoSetup	Optimization/endl_bench/main.cpp	/^static void DoSetup(const benchmark::State& state) {$/;"	f	file:
+DoTeardown	Optimization/endl_bench/main.cpp	/^BENCHMARK(BM_BackslashN)->RangeMultiplier(8)->Range(256, 2<<16)->Setup(DoSetup)->Teardown(DoTeardown);$/;"	v
+DoTeardown	Optimization/endl_bench/main.cpp	/^BENCHMARK(BM_Endl)->RangeMultiplier(8)->Range(256, 2<<16)->Setup(DoSetup)->Teardown(DoTeardown);$/;"	v
+DoTeardown	Optimization/endl_bench/main.cpp	/^static void DoTeardown(const benchmark::State& state) {$/;"	f	file:
+LongestCommonSubsequence	DynamicPorgramming/LCS.cpp	/^int LongestCommonSubsequence(string s1, string s2) {$/;"	f
+MaxHeap	Heap/MaxHeap.cpp	/^class MaxHeap {$/;"	c	file:
+Node	Queue/QueueLinkedList.cpp	/^    Node(T val) : value(val), next(nullptr) {}$/;"	f	struct:Node
+Node	Queue/QueueLinkedList.cpp	/^struct Node {$/;"	s	file:
+Queue	Queue/QueueCircularBuffer.cpp	/^    Queue(size_t size) : capacity_(size) {$/;"	f	class:Queue
+Queue	Queue/QueueCircularBuffer.cpp	/^class Queue {$/;"	c	file:
+Queue	Queue/QueueLinkedList.cpp	/^class Queue {$/;"	c	file:
+Solution	UnionFind/547-Number-of-Provinces.cpp	/^class Solution {$/;"	c	file:
+better_ostream_iterator	Iterator/better_ostream_iterator.cpp	/^    better_ostream_iterator(std::ostream& os) : os(os) {}$/;"	f	class:better_ostream_iterator
+better_ostream_iterator	Iterator/better_ostream_iterator.cpp	/^    better_ostream_iterator(std::ostream& os, const std::string& d) :$/;"	f	class:better_ostream_iterator
+better_ostream_iterator	Iterator/better_ostream_iterator.cpp	/^class better_ostream_iterator {$/;"	c	file:
+buffer_	Queue/QueueCircularBuffer.cpp	/^    T* buffer_;$/;"	m	class:Queue	file:
+capacity_	Queue/QueueCircularBuffer.cpp	/^    size_t capacity_;$/;"	m	class:Queue	file:
+coutbuff	Optimization/endl_bench/main.cpp	/^auto coutbuff = std::cout.rdbuf();$/;"	v
+data_	Heap/MaxHeap.cpp	/^    std::vector<int> data_;$/;"	m	class:MaxHeap	file:
+delim	Iterator/better_ostream_iterator.cpp	/^    std::string delim;$/;"	m	class:better_ostream_iterator	file:
+dequeue	Queue/QueueCircularBuffer.cpp	/^    void dequeue() {$/;"	f	class:Queue
+dequeue	Queue/QueueLinkedList.cpp	/^    void dequeue() {$/;"	f	class:Queue
+empty	Heap/MaxHeap.cpp	/^    bool empty() const { return size() == 0; }$/;"	f	class:MaxHeap
+empty	Queue/QueueCircularBuffer.cpp	/^    bool empty() const { return size_ == 0; }$/;"	f	class:Queue
+empty	Queue/QueueLinkedList.cpp	/^    bool empty() const { return size_ == 0; }$/;"	f	class:Queue
+enqueue	Queue/QueueCircularBuffer.cpp	/^    void enqueue(int value) {$/;"	f	class:Queue
+enqueue	Queue/QueueLinkedList.cpp	/^    void enqueue(T value) {$/;"	f	class:Queue
+fib	DynamicPorgramming/fib.cpp	/^int fib(int n) {$/;"	f
+find	UnionFind/1202-Smallest-String-With-Swaps.cpp	/^    int find(int node) {$/;"	f	class:DisjointSet
+findCircleNum	UnionFind/547-Number-of-Provinces.cpp	/^    int findCircleNum(vector<vector<int>>& isConnected) {$/;"	f	class:Solution
+findRoot	UnionFind/547-Number-of-Provinces.cpp	/^    int findRoot(int node) {$/;"	f	class:DisjointSet
+front	Queue/QueueCircularBuffer.cpp	/^    T front() const {$/;"	f	class:Queue
+front	Queue/QueueLinkedList.cpp	/^    T front() const { $/;"	f	class:Queue
+getProvinceCount	UnionFind/547-Number-of-Provinces.cpp	/^    int getProvinceCount() const { return provinceCount; }$/;"	f	class:DisjointSet
+head_	Queue/QueueCircularBuffer.cpp	/^    size_t head_ = 0, tail_ = 0;$/;"	m	class:Queue	file:
+head_	Queue/QueueLinkedList.cpp	/^    Node<T>* head_ = nullptr;$/;"	m	class:Queue	file:
+heapSort	Heap/HeapSort.cpp	/^void heapSort(vector<int>& v) {$/;"	f
+heapify	Sort/HeapSort.h	/^inline void heapify(RandomIt start, RandomIt end, RandomIt root) {$/;"	f
+heapify_down	Heap/MaxHeap.cpp	/^    void heapify_down(int i) {$/;"	f	class:MaxHeap	file:
+heapify_up	Heap/MaxHeap.cpp	/^    void heapify_up(int i) {$/;"	f	class:MaxHeap	file:
+heapsort	Sort/HeapSort.h	/^inline void heapsort(RandomIt start, RandomIt end) {$/;"	f
+input_delim	Iterator/better_ostream_iterator.cpp	/^    std::string input_delim;$/;"	m	class:better_ostream_iterator	file:
+insertionsort	Sort/InsertionSort.h	/^inline void insertionsort(RandomIt start, RandomIt end) {$/;"	f
+introsort	Sort/IntroSort.h	/^inline void introsort(RandomIt start, RandomIt end) {$/;"	f
+introsort_	Sort/IntroSort.h	/^inline void introsort_(RandomIt start, RandomIt end, int maxDepth) {$/;"	f
+left	Heap/MaxHeap.cpp	/^    int left(int i) const {$/;"	f	class:MaxHeap	file:
+main	Algorithms/MonteCarlo/pi_estimation.cpp	/^int main(int argc, const char** argv) {$/;"	f
+main	DynamicPorgramming/LCS.cpp	/^int main(int argc, const char** argv) {$/;"	f
+main	DynamicPorgramming/fib.cpp	/^int main(int argc, const char** argv) {$/;"	f
+main	Heap/HeapSort.cpp	/^int main(int argc, const char** argv) {$/;"	f
+main	Heap/MaxHeap.cpp	/^int main(int argc, const char** argv) {$/;"	f
+main	Iterator/better_ostream_iterator.cpp	/^int main() {$/;"	f
+main	Queue/QueueCircularBuffer.cpp	/^int main(int argc, const char** argv) {$/;"	f
+main	Queue/QueueLinkedList.cpp	/^int main(int argc, const char** argv) {$/;"	f
+main	Sort/benchmark.cpp	/^int main(int argc, char** argv) {$/;"	f
+main	UnionFind/547-Number-of-Provinces.cpp	/^int main(int argc, const char** argv) {$/;"	f
+maxHeapifyDown	Heap/HeapSort.cpp	/^void maxHeapifyDown(vector<int>& v, int idx, int heapSize) {$/;"	f
+median_of_three	Sort/QuickSort.h	/^inline RandomIt median_of_three(RandomIt a, RandomIt b, RandomIt c) {$/;"	f
+next	Queue/QueueLinkedList.cpp	/^    Node* next;$/;"	m	struct:Node	file:
+operator *	Iterator/better_ostream_iterator.cpp	/^    better_ostream_iterator<T>& operator*() { return *this; }$/;"	f	class:better_ostream_iterator
+operator ++	Iterator/better_ostream_iterator.cpp	/^    better_ostream_iterator<T>& operator++() { return *this; }$/;"	f	class:better_ostream_iterator
+operator ++	Iterator/better_ostream_iterator.cpp	/^    better_ostream_iterator<T>& operator++(int) { return *this; }$/;"	f	class:better_ostream_iterator
+operator =	Iterator/better_ostream_iterator.cpp	/^    better_ostream_iterator<T>& operator=(const T& elem) {$/;"	f	class:better_ostream_iterator
+os	Iterator/better_ostream_iterator.cpp	/^    std::ostream& os;$/;"	m	class:better_ostream_iterator	file:
+parent	Heap/MaxHeap.cpp	/^    int parent(int i) const {$/;"	f	class:MaxHeap	file:
+partition	Sort/QuickSort.h	/^inline RandomIt partition(RandomIt start, RandomIt end) {$/;"	f
+pop	Heap/MaxHeap.cpp	/^    void pop() {$/;"	f	class:MaxHeap
+provinceCount	UnionFind/547-Number-of-Provinces.cpp	/^    int provinceCount;$/;"	m	class:DisjointSet	file:
+push	Heap/MaxHeap.cpp	/^    void push(int key) {$/;"	f	class:MaxHeap
+quicksort	Sort/QuickSort.h	/^inline void quicksort(RandomIt start, RandomIt end) {$/;"	f
+rank	UnionFind/1202-Smallest-String-With-Swaps.cpp	/^    vector<int> rank;$/;"	m	class:DisjointSet	file:
+rank	UnionFind/547-Number-of-Provinces.cpp	/^    vector<int> rank;$/;"	m	class:DisjointSet	file:
+right	Heap/MaxHeap.cpp	/^    int right(int i) const {$/;"	f	class:MaxHeap	file:
+root	UnionFind/1202-Smallest-String-With-Swaps.cpp	/^    vector<int> root;$/;"	m	class:DisjointSet	file:
+root	UnionFind/547-Number-of-Provinces.cpp	/^    vector<int> root;$/;"	m	class:DisjointSet	file:
+size	Heap/MaxHeap.cpp	/^    constexpr size_t size() const { return data_.size(); }$/;"	f	class:MaxHeap
+size	Queue/QueueCircularBuffer.cpp	/^    size_t size() const { return size_; }$/;"	f	class:Queue
+size	Queue/QueueLinkedList.cpp	/^    size_t size() const { return size_; }$/;"	f	class:Queue
+size_	Queue/QueueCircularBuffer.cpp	/^    size_t size_ = 0;$/;"	m	class:Queue	file:
+size_	Queue/QueueLinkedList.cpp	/^    size_t size_ = 0;$/;"	m	class:Queue	file:
+tail_	Queue/QueueCircularBuffer.cpp	/^    size_t head_ = 0, tail_ = 0;$/;"	m	class:Queue	file:
+tail_	Queue/QueueLinkedList.cpp	/^    Node<T>* tail_ = nullptr;$/;"	m	class:Queue	file:
+top	Heap/MaxHeap.cpp	/^    int top() {$/;"	f	class:MaxHeap
+unionSets	UnionFind/547-Number-of-Provinces.cpp	/^    void unionSets(int nodeX, int nodeY) {$/;"	f	class:DisjointSet
+value	Queue/QueueLinkedList.cpp	/^    T value;$/;"	m	struct:Node	file:
+~Queue	Queue/QueueCircularBuffer.cpp	/^    ~Queue() {$/;"	f	class:Queue
+~Queue	Queue/QueueLinkedList.cpp	/^    ~Queue() {$/;"	f	class:Queue
