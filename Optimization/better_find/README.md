@@ -26,3 +26,5 @@ make
 For this benchmark I used MacBook Pro 2019, 2.3 GHz 8-Core Intel Core i9.
 
 The `simd_find` function performed ~x6 better than `std::find` for an array containing ~1,000,000 random numbers with the target number being located exactly in the middle. The benchmark result is in the screenshot below:
+
+![Benchmark](benchmark.jpg)
